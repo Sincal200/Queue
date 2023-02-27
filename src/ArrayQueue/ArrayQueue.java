@@ -1,10 +1,12 @@
+package ArrayQueue;
+
 import java.util.NoSuchElementException;
 
 public class ArrayQueue {
     private Object[] queue;  // underlying array to hold queue elements
     int head = 0;  // index of front element in queue
     int tail = 0;  // index of rear element in queue
-    int size;  // number of elements in queue
+    public int size;  // number of elements in queue
 
     public ArrayQueue(int capacity) {
         queue = new Object[capacity];

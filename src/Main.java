@@ -1,3 +1,6 @@
+import ArrayQueue.ArrayQueue;
+import LinkedListQueue.LinkedListQueue;
+
 import java.util.Scanner;
 
 public class Main {

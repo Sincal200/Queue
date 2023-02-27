@@ -1,3 +1,5 @@
+package LinkedListQueue;
+
 import java.util.NoSuchElementException;
 
 public class LinkedListQueue {

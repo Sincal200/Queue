@@ -1,4 +1,4 @@
-import java.util.NoSuchElementException;
+package LinkedListQueue;
 
 public class Node {
     Object item;
