@@ -31,14 +31,30 @@ public class Main {
                             case 1:
                                 System.out.println("Ingrese valor a encolar");
                                 String valor = sc.next();
+                                System.out.println("Antes de encolar");
+                                queue.printQueue();
+                                System.out.println("");
+
                                 queue.enqueue(valor);
-                                option = 0;
+                                System.out.println("");
+                                System.out.println("Despues de encolar");
+                                queue.printQueue();
                                 break;
                             case 2:
+                                System.out.println("Antes de desencolar");
+                                queue.printQueue();
+                                queue.dequeue();
+                                System.out.println("");
+                                System.out.println("Despues de desencolar");
+                                queue.printQueue();
                                 break;
                             case 3:
+                                System.out.println("Elemento que se encuentra en la cima:");
+                                System.out.println(queue.peek());
                                 break;
                             case 4:
+                                System.out.println("Tamanio de la cola:");
+                                System.out.println(queue.size);
                                 break;
                         }
                     } while (option != 5);

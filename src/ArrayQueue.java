@@ -40,8 +40,7 @@ public class ArrayQueue {
     }
     public void printQueue() {
         if (isEmpty()) {
-            System.out.println("Queue is empty");
-            return;
+            throw new NoSuchElementException ("Cannot print from empty queue");
         }
         for (int i = 0; i < size; i++) {
             int index = (head + i) % queue.length;
